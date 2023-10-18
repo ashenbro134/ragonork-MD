@@ -38,8 +38,8 @@ Module({
         author: STICKER_DATA.split(";")[1] || "",
         packname: message.senderName,
         categories: STICKER_DATA.split(";")[2] || "😂",
-        android: "https://github.com/souravkl11/Raganork-md/",
-        ios: "https://github.com/souravkl11/Raganork-md/"
+        android: "https://github.com/souravkl11/raganork-md/",
+        ios: "https://github.com/ashenbro134/ragonork-MD"
     }
     if (message.reply_message.image === true) {
         return await message.client.sendMessage(message.jid,{sticker: fs.readFileSync(await addExif(await sticker(savedFile),exif))},{quoted: message.quoted})
@@ -164,8 +164,8 @@ Module({
             author: STICKER_DATA.split(";")[1] || "",
             packname: message.senderName,
             categories: STICKER_DATA.split(";")[2] || "😂",
-            android: "https://github.com/souravkl11/Raganork-md/",
-            ios: "https://github.com/souravkl11/Raganork-md/"
+            android: "https://github.com/ashenbro134/ragonork-MD/",
+            ios: "https://github.com/ashenbro134/ragonork-MD/"
         }
         await message.send(fs.readFileSync(await addExif(await sticker("attp.mp4",'video'),exif)),'sticker')
     
